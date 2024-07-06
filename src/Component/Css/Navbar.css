@@ -1,0 +1,74 @@
+/* Navbar.css */
+
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:#333; /* You can adjust the background color as needed */
+  z-index: 1000; /* Adjust the z-index as needed to ensure it appears above other content */
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10px; /* Adjust the padding as needed */
+}
+
+.Nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Nav ul li {
+  margin-right: 30px; /* Adjust the spacing between menu items as needed */
+  font-size: larger;
+  color: aliceblue;
+  padding-top: 10px;
+}
+
+.Nav ul li:last-child {
+  margin-right: 10px; /* Remove margin from the last menu item */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #d81616; /* You can adjust the link color as needed */
+  
+}
+
+.cart-link {
+  text-decoration: none;
+  color: #e7dede; /* You can adjust the link color as needed */
+}
+
+.image {
+  width: 50px; /* Adjust the width of the logo as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+@media screen and (max-width: 900px) {
+ ul li{
+    flex-direction: column;
+}
+}
+ul li:hover,
+ul li:active {
+color: rgb(241, 123, 104);
+transform: scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+
+  .Nav ul {
+    flex-direction: column;
+    font-size: small;
+
+  }}
+p{
+  color: aliceblue;
+  font-size: larger;
+  padding-top: 10px;
+}

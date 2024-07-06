@@ -1,0 +1,106 @@
+
+.product-card-container{
+  display: grid;
+  row-gap: 100px;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+  margin: 20px;
+}
+.product-card {
+
+  padding: 20px;
+  margin: 10px;
+
+  border-style: solid;
+
+  border-width: 1px;
+
+  border-radius: 10px;
+
+  box-sizing: border-box;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+.product-image-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.product-image{
+  height: 300px;
+  width: 250px;
+  
+ 
+}
+.product-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    font-size: 18px;
+   margin-bottom: 10px;
+
+}
+
+
+.product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    font-size: 16px;
+  font-weight: bold;
+
+}
+.btn{
+margin-left: 30%;}
+/* Css/Products.css */
+
+.product-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .product-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr)); /* Adjust column width using vw units */
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .product-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr)); /* Adjust column width using vw units */
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .product-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr)); /* Adjust column width using vw units */
+  }
+}
+.search-container  {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: inline-block;
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+.search-button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
