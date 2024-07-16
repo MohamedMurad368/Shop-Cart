@@ -13,11 +13,12 @@ const Cart = ({ cart, setCart }) => {
   };
 
   const calculateTotal = () => {
-    return cart.reduce((total, item) => total + item.quantity * item.price, 0);
+    const total = cart.reduce((acc, item) => acc + item.quantity * item.price, 0);
+    return total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   };
 
   return (
-    <div className="cart-container" style={{ paddingTop: '100px' }}>
+    <div className="cart-container">
       <div className="cart">
         <h2>Cart</h2>
         <p>Total Quantity of Products: {cart.reduce((total, item) => total + item.quantity, 0)}</p>
@@ -46,7 +47,7 @@ const Cart = ({ cart, setCart }) => {
                 </li>
               ))}
             </ul>
-            <p>Total: ${calculateTotal()}</p>
+            <p className="total">Total: {calculateTotal()}</p>
           </>
         )}
         <Link to="/products">

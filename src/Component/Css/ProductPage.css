@@ -27,17 +27,20 @@
 .product-page__title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .product-page__description {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .product-page__price {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .product-page__add-to-cart {
